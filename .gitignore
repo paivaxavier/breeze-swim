@@ -1,0 +1,6 @@
+.DS_Store
+.cursor/mcp.json
+.tmp-photos/
+node_modules/
+.env
+*.log

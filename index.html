@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Breeze Swim | Swim Lessons in Flagler County, FL</title>
+    <meta name="description" content="Breeze Swim offers aquatic survival and stroke fundamentals in Flagler County. Private swim lessons for ages 6 months and up — all abilities welcome.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'breeze-sky': '#0ea5e9',
+                        'breeze-deep': '#0369a1',
+                        'breeze-teal': '#14b8a6',
+                        'breeze-foam': '#f0f9ff',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="breeze-wrapper">
+
+    <!-- Navigation -->
+    <header class="glass-nav sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2.5 group">
+                <span class="w-10 h-10 rounded-full bg-gradient-to-br from-breeze-sky to-breeze-deep flex items-center justify-center text-white shadow-md">
+                    <i data-lucide="waves" class="w-5 h-5"></i>
+                </span>
+                <span class="font-extrabold text-xl text-breeze-deep tracking-tight">Breeze Swim</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="lessons.html" class="nav-link">Lessons</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contact.html" class="btn-primary text-sm !py-2.5 !px-5">Book a Lesson</a>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden p-2 text-breeze-deep" aria-label="Open menu" aria-expanded="false">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden border-t border-breeze-sky/10 bg-white/95">
+            <nav class="flex flex-col px-5 py-4 gap-3">
+                <a href="index.html" class="nav-link active py-2">Home</a>
+                <a href="lessons.html" class="nav-link py-2">Lessons</a>
+                <a href="about.html" class="nav-link py-2">About</a>
+                <a href="faq.html" class="nav-link py-2">FAQ</a>
+                <a href="contact.html" class="btn-primary text-sm mt-2">Book a Lesson</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative pt-16 pb-28 px-5 overflow-hidden">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="section-label mb-4">Flagler County, Florida</p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight mb-6">
+                    Confident swimmers start with a <span class="text-breeze-deep">gentle breeze</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8 max-w-xl">
+                    Aquatic survival and stroke fundamentals for ages <strong>6 months and up</strong>. Patient, personalized instruction for <strong>all abilities</strong> — from first splashes to strong, safe strokes.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="contact.html" class="btn-primary">Book a Lesson</a>
+                    <a href="lessons.html" class="btn-secondary">View Programs</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-breeze-sky/20 via-breeze-teal/15 to-breeze-deep/20 border border-breeze-sky/20 flex items-center justify-center shadow-xl">
+                    <div class="text-center p-8">
+                        <i data-lucide="life-buoy" class="w-20 h-20 text-breeze-deep mx-auto mb-4 opacity-80"></i>
+                        <p class="text-breeze-deep font-bold text-lg">Photo coming soon</p>
+                        <p class="text-slate-500 text-sm mt-1">Add lesson or pool images to <code class="text-xs bg-white/60 px-1.5 py-0.5 rounded">images/</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="bg-white py-10 border-y border-breeze-sky/10">
+        <div class="max-w-6xl mx-auto px-5 grid sm:grid-cols-3 gap-8 text-center">
+            <div>
+                <p class="text-3xl font-extrabold text-breeze-deep">6 mo+</p>
+                <p class="text-sm text-slate-500 font-semibold mt-1">Ages welcome</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-breeze-deep">All</p>
+                <p class="text-sm text-slate-500 font-semibold mt-1">Abilities & experience levels</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-breeze-deep">1:1</p>
+                <p class="text-sm text-slate-500 font-semibold mt-1">Personalized attention</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs preview -->
+    <section class="py-20 px-5">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-14">
+                <p class="section-label mb-3">What we teach</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Lessons built on safety first</h2>
+                <p class="text-slate-600 mt-4 max-w-2xl mx-auto">Every swimmer gets a plan that meets them where they are — whether they're learning to float or refining their freestyle.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-soft rounded-2xl p-8">
+                    <div class="w-12 h-12 rounded-xl bg-breeze-foam flex items-center justify-center mb-5">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-breeze-deep"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Aquatic Survival Skills</h3>
+                    <p class="text-slate-600 leading-relaxed">Water safety, breath control, floating, and self-rescue fundamentals — especially important for infants, toddlers, and new swimmers building confidence in the water.</p>
+                </div>
+                <div class="card-soft rounded-2xl p-8">
+                    <div class="w-12 h-12 rounded-xl bg-breeze-foam flex items-center justify-center mb-5">
+                        <i data-lucide="activity" class="w-6 h-6 text-breeze-deep"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Stroke Fundamentals</h3>
+                    <p class="text-slate-600 leading-relaxed">Proper body position, kicking, arm movement, and breathing technique — laying the foundation for efficient, confident swimming at any age.</p>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="lessons.html" class="text-breeze-deep font-bold hover:text-breeze-sky transition-colors inline-flex items-center gap-1">
+                    See all lesson details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="py-20 px-5 bg-white">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="section-label mb-3">Who we serve</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-6">Swim lessons for every swimmer</h2>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-breeze-teal shrink-0 mt-0.5"></i>
+                        <span class="text-slate-600"><strong class="text-slate-800">Babies & toddlers (6 months+)</strong> — gentle introduction to water with caregiver-supported survival skills</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-breeze-teal shrink-0 mt-0.5"></i>
+                        <span class="text-slate-600"><strong class="text-slate-800">Children & teens</strong> — building skills from water comfort to competitive-ready strokes</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-breeze-teal shrink-0 mt-0.5"></i>
+                        <span class="text-slate-600"><strong class="text-slate-800">Adults</strong> — it's never too late to learn or overcome fear of the water</span>
+                    </li>
+                    <li class="flex gap-3">
+                        <i data-lucide="check-circle" class="w-5 h-5 text-breeze-teal shrink-0 mt-0.5"></i>
+                        <span class="text-slate-600"><strong class="text-slate-800">All abilities</strong> — adaptive, patient instruction tailored to each swimmer's needs</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-soft rounded-2xl p-8 bg-breeze-foam/50">
+                <h3 class="font-bold text-lg text-breeze-deep mb-4 flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i> Serving Flagler County
+                </h3>
+                <p class="text-slate-600 leading-relaxed mb-4">Lessons are offered at convenient locations throughout Flagler County. Exact pool or lesson site details are shared when you book.</p>
+                <a href="contact.html" class="btn-primary text-sm">Ask about availability</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-5">
+        <div class="max-w-3xl mx-auto text-center card-soft rounded-3xl p-10 sm:p-14 bg-gradient-to-br from-breeze-deep to-breeze-sky text-white border-0 shadow-xl">
+            <h2 class="text-3xl font-extrabold mb-4">Ready to get started?</h2>
+            <p class="text-white/90 mb-8 leading-relaxed">Tell us about your swimmer and we'll help you find the right lesson plan. No experience necessary — all abilities welcome.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-breeze-deep font-bold rounded-full hover:bg-breeze-foam transition-colors shadow-lg">
+                Contact Breeze Swim <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-5">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <i data-lucide="waves" class="w-5 h-5 text-breeze-sky"></i>
+                <span class="font-bold text-white">Breeze Swim</span>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-6 text-sm">
+                <a href="lessons.html" class="hover:text-white transition-colors">Lessons</a>
+                <a href="about.html" class="hover:text-white transition-colors">About</a>
+                <a href="faq.html" class="hover:text-white transition-colors">FAQ</a>
+                <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+            <p class="text-sm">Flagler County, FL</p>
+        </div>
+        <p class="text-center text-xs text-slate-500 mt-8">&copy; <span id="year"></span> Breeze Swim. All rights reserved.</p>
+    </footer>
+
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
