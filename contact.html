@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Contact & Book a Lesson | Breeze Swim</title>
-    <meta name="description" content="Contact Breeze Swim to book aquatic survival or stroke lessons in Flagler County. Ages 6 months and up, all abilities welcome.">
+    <title>Get in Touch | Breeze Swim</title>
+    <meta name="description" content="Join the Breeze Swim waitlist or contact Brielle about private aquatic survival lessons in Flagler County. Ages 6 months and up.">
+    <link rel="icon" href="images/favicon-32.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800&family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = { theme: { extend: { colors: { 'breeze-sky': '#0ea5e9', 'breeze-deep': '#0369a1', 'breeze-teal': '#14b8a6', 'breeze-foam': '#f0f9ff' } } } }
+        tailwind.config = { theme: { extend: { colors: {
+                        'breeze-pink': '#fb5b86',
+                        'breeze-coral': '#fc8296',
+                        'breeze-sky': '#34c0c9',
+                        'breeze-deep': '#147a85',
+                        'breeze-teal': '#34c0c9',
+                        'breeze-gold': '#ffe38d',
+                        'breeze-sand': '#dfc0aa',
+                        'breeze-foam': '#fff5f7',
+                    } } } }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="has-mobile-cta page-contact">
 <div class="breeze-wrapper">
 
     <header class="glass-nav sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2.5">
-                <span class="w-10 h-10 rounded-full bg-gradient-to-br from-breeze-sky to-breeze-deep flex items-center justify-center text-white shadow-md">
-                    <i data-lucide="waves" class="w-5 h-5"></i>
-                </span>
-                <span class="font-extrabold text-xl text-breeze-deep tracking-tight">Breeze Swim</span>
+            <a href="index.html" class="flex items-center shrink-0">
+                <img src="images/logo.png" alt="Breeze Swim" class="nav-logo" width="200" height="180">
             </a>
             <nav class="hidden md:flex items-center gap-8">
+                <div class="nav-social-icons flex items-center gap-1.5 mr-1">
+                    <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="Instagram">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/breezeswimlessons" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="Facebook">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    </a>
+                </div>
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="lessons.html" class="nav-link">Lessons</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="faq.html" class="nav-link">FAQ</a>
-                <a href="contact.html" class="btn-primary text-sm !py-2.5 !px-5">Book a Lesson</a>
+                <a href="contact.html#waitlist" data-waitlist class="btn-primary text-sm !py-2.5 !px-5">Join the Waitlist</a>
             </nav>
             <button id="mobile-menu-toggle" class="md:hidden p-2 text-breeze-deep" aria-label="Open menu" aria-expanded="false">
                 <i data-lucide="menu" class="w-6 h-6"></i>
@@ -40,102 +56,159 @@
         </div>
         <div id="mobile-menu" class="mobile-menu md:hidden border-t border-breeze-sky/10 bg-white/95">
             <nav class="flex flex-col px-5 py-4 gap-3">
+                <div class="nav-social-icons flex items-center gap-2 pb-1">
+                    <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="Instagram">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/breezeswimlessons" target="_blank" rel="noopener noreferrer" class="nav-social-icon" aria-label="Facebook">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                    </a>
+                </div>
                 <a href="index.html" class="nav-link py-2">Home</a>
                 <a href="lessons.html" class="nav-link py-2">Lessons</a>
                 <a href="about.html" class="nav-link py-2">About</a>
                 <a href="faq.html" class="nav-link py-2">FAQ</a>
-                <a href="contact.html" class="btn-primary text-sm mt-2">Book a Lesson</a>
+                <a href="contact.html#waitlist" data-waitlist class="btn-primary text-sm mt-2">Join the Waitlist</a>
             </nav>
         </div>
     </header>
 
-    <section class="pt-16 pb-12 px-5">
+    <section class="hero-section pt-16 pb-12 px-5">
         <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
-            <div>
+            <div class="reveal">
                 <p class="section-label mb-3">Get in touch</p>
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Book a lesson</h1>
-                <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                    Tell us about your swimmer and we'll get back to you with availability. Include age, experience level, and any goals or concerns.
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">Get in touch</h1>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                    Breeze Swim is currently <strong>waitlisted</strong>. Most students are in a <strong>4–6 week program</strong> (15-minute lessons, four times per week), so new spots open as families finish. Join the waitlist below — Brielle will reach out when a spot is available.
+                </p>
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    Questions? You can also email or message on Instagram anytime.
                 </p>
 
-                <div class="space-y-5">
-                    <!-- TODO: Replace with real phone, email, and booking link -->
+                <div class="space-y-4">
                     <div class="flex items-start gap-4 card-soft rounded-xl p-5">
                         <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
-                            <i data-lucide="phone" class="w-5 h-5 text-breeze-deep"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-slate-900">Phone</p>
-                            <p class="text-slate-500 text-sm mt-0.5">Coming soon</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-4 card-soft rounded-xl p-5">
-                        <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
-                            <i data-lucide="mail" class="w-5 h-5 text-breeze-deep"></i>
+                            <i data-lucide="mail" class="w-5 h-5 text-breeze-sky"></i>
                         </div>
                         <div>
                             <p class="font-bold text-slate-900">Email</p>
-                            <p class="text-slate-500 text-sm mt-0.5">Coming soon</p>
+                            <a href="mailto:breezeswimlessons@gmail.com" class="text-breeze-deep font-semibold hover:text-breeze-sky transition-colors break-all text-sm mt-0.5 inline-block">breezeswimlessons@gmail.com</a>
                         </div>
                     </div>
                     <div class="flex items-start gap-4 card-soft rounded-xl p-5">
                         <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-breeze-deep"></i>
+                            <svg class="w-5 h-5 text-breeze-sky" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                         </div>
                         <div>
-                            <p class="font-bold text-slate-900">Service area</p>
-                            <p class="text-slate-600 text-sm mt-0.5">Flagler County, Florida</p>
+                            <p class="font-bold text-slate-900">Instagram</p>
+                            <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="text-breeze-deep font-semibold hover:text-breeze-sky transition-colors text-sm mt-0.5 inline-block">@breezeswimlessons</a>
+                            <p class="text-slate-500 text-xs mt-1">Lesson updates, photos &amp; availability</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 card-soft rounded-xl p-5">
+                        <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
+                            <i data-lucide="timer" class="w-5 h-5 text-breeze-sky"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Lesson format</p>
+                            <p class="text-slate-600 text-sm mt-0.5 leading-relaxed"><strong>15 minutes</strong> per lesson, <strong>four times per week</strong> (Monday–Thursday)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 card-soft rounded-xl p-5">
+                        <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
+                            <i data-lucide="calendar" class="w-5 h-5 text-breeze-sky"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Season</p>
+                            <p class="text-slate-600 text-sm mt-0.5">Afternoon lessons, March through October</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 card-soft rounded-xl p-5">
+                        <div class="w-10 h-10 rounded-lg bg-breeze-foam flex items-center justify-center shrink-0">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-breeze-sky"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-900">Lesson location</p>
+                            <p class="text-slate-600 text-sm mt-0.5 leading-relaxed">Private pool in <strong>Bunnell</strong>, a city in Flagler County, FL. Exact address shared when you're scheduled from the waitlist.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="card-soft rounded-2xl p-8 sm:p-10">
-                <h2 class="text-xl font-bold text-slate-900 mb-6">Send a message</h2>
-                <!-- TODO: Wire to Formspree, Squarespace form, or email service -->
-                <form class="space-y-5" action="#" method="POST" onsubmit="event.preventDefault(); alert('Form not connected yet — add your email service or booking link.');">
-                    <div>
-                        <label for="name" class="block text-sm font-semibold text-slate-700 mb-1.5">Your name</label>
-                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-breeze-sky/20 bg-white focus:outline-none focus:ring-2 focus:ring-breeze-sky/40 focus:border-breeze-sky text-slate-900" placeholder="Jane Smith">
+            <div class="reveal" id="waitlist">
+                <div class="card-soft rounded-2xl overflow-hidden mb-6">
+                    <img src="images/gallery-1.jpg" alt="Toddler survival float during a Breeze Swim lesson" class="w-full aspect-[16/9] object-cover" width="1024" height="562" loading="lazy">
+                </div>
+                <div class="card-soft rounded-2xl p-8 sm:p-10 flex flex-col justify-center text-center border-2 border-breeze-pink/25">
+                    <div class="w-12 h-12 rounded-full bg-breeze-foam flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="clipboard-list" class="w-6 h-6 text-breeze-pink"></i>
                     </div>
-                    <div>
-                        <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">Email</label>
-                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-breeze-sky/20 bg-white focus:outline-none focus:ring-2 focus:ring-breeze-sky/40 focus:border-breeze-sky text-slate-900" placeholder="you@email.com">
+                    <h2 class="text-xl font-bold text-slate-900 mb-3">Join the 2026 waitlist</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">Fill out Brielle's waitlist form with your swimmer's info. One form per child. Filling out the form doesn't guarantee a spot, but Brielle will contact you when one opens up.</p>
+                    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                        <a href="contact.html#waitlist" data-waitlist class="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Open waitlist form
+                        </a>
+                        <a href="mailto:breezeswimlessons@gmail.com?subject=Waitlist%20Question&body=Swimmer%27s%20age%3A%0AExperience%20level%3A%0AQuestion%3A" class="btn-secondary w-full sm:w-auto inline-flex items-center justify-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Email a question
+                        </a>
                     </div>
-                    <div>
-                        <label for="swimmer-age" class="block text-sm font-semibold text-slate-700 mb-1.5">Swimmer's age</label>
-                        <input type="text" id="swimmer-age" name="swimmer-age" class="w-full px-4 py-3 rounded-xl border border-breeze-sky/20 bg-white focus:outline-none focus:ring-2 focus:ring-breeze-sky/40 focus:border-breeze-sky text-slate-900" placeholder="e.g. 18 months, 7 years, adult">
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-slate-700 mb-1.5">Message</label>
-                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-breeze-sky/20 bg-white focus:outline-none focus:ring-2 focus:ring-breeze-sky/40 focus:border-breeze-sky text-slate-900 resize-y" placeholder="Experience level, goals, preferred times, any questions..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary w-full">Send Message</button>
-                </form>
-                <p class="text-xs text-slate-400 mt-4 text-center">Form placeholder — connect to Formspree, email, or a booking app when ready.</p>
+                    <p class="text-xs text-slate-400 mt-6">Prefer Instagram? Message <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="text-breeze-deep font-semibold hover:text-breeze-sky">@breezeswimlessons</a></p>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 px-5">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2">
-                <i data-lucide="waves" class="w-5 h-5 text-breeze-sky"></i>
-                <span class="font-bold text-white">Breeze Swim</span>
+    <footer class="site-footer py-14 px-5">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <a href="index.html" class="inline-block mb-4">
+                        <img src="images/logo.png" alt="Breeze Swim" class="footer-logo" width="160" height="144">
+                    </a>
+                    <p class="text-sm leading-relaxed">Private aquatic survival and stroke lessons in Flagler County, FL.</p>
+                    <div class="social-icons mt-4" aria-label="Social media">
+                        <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow Breeze Swim on Instagram">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/breezeswimlessons" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Follow Breeze Swim on Facebook">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-sm mb-4">Explore</p>
+                    <nav class="flex flex-col gap-2 text-sm">
+                        <a href="index.html">Home</a>
+                        <a href="lessons.html">Lessons</a>
+                        <a href="about.html">About Brielle</a>
+                        <a href="faq.html">FAQ</a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-sm mb-4">Contact</p>
+                    <nav class="flex flex-col gap-2 text-sm">
+                        <a href="mailto:breezeswimlessons@gmail.com">breezeswimlessons@gmail.com</a>
+                        <a href="https://www.instagram.com/breezeswimlessons/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> @breezeswimlessons
+                        </a>
+                    </nav>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-sm mb-4">Location</p>
+                    <p class="text-sm leading-relaxed flex items-start gap-2">
+                        <i data-lucide="map-pin" class="w-4 h-4 text-breeze-sky shrink-0 mt-0.5"></i>
+                        Private pool in Bunnell<br>Flagler County, FL
+                    </p>
+                </div>
             </div>
-            <nav class="flex flex-wrap justify-center gap-6 text-sm">
-                <a href="index.html" class="hover:text-white transition-colors">Home</a>
-                <a href="lessons.html" class="hover:text-white transition-colors">Lessons</a>
-                <a href="about.html" class="hover:text-white transition-colors">About</a>
-                <a href="faq.html" class="hover:text-white transition-colors">FAQ</a>
-            </nav>
-            <p class="text-sm">Flagler County, FL</p>
+            <p class="text-center text-xs text-slate-500 pt-8 border-t border-slate-800">&copy; <span id="year"></span> Breeze Swim. All rights reserved.</p>
         </div>
-        <p class="text-center text-xs text-slate-500 mt-8">&copy; <span id="year"></span> Breeze Swim. All rights reserved.</p>
     </footer>
 
 </div>
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/site-config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

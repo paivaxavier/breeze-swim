@@ -5,7 +5,33 @@ When working on **Breeze Swim** branding, marketing, or any customer-facing asse
 - **Business:** Breeze Swim — private swim instruction in Flagler County, FL
 - **Focus:** Aquatic survival skills and stroke fundamentals for ages **6 months and up**, **all abilities**
 - **Tone:** Warm, reassuring, professional — speak to parents and caregivers with clarity and confidence
-- **Colors:** `breeze-sky` (#0ea5e9), `breeze-deep` (#0369a1), `breeze-teal` (#14b8a6), `breeze-foam` (#f0f9ff)
-- **Service area:** Flagler County, Florida
+- **Logo:** `images/logo.png` — use full-color logo in nav and footer (`.nav-logo`, `.footer-logo`)
+- **Colors** (from logo):
+  - `breeze-pink` (#fb5b86) — primary accent, CTAs
+  - `breeze-coral` (#fc8296) — gradient partner, warm highlights
+  - `breeze-sky` / `breeze-teal` / `breeze-water` (#34c0c9) — logo water, links, icons, accents
+  - `breeze-deep` (#147a85) — deep teal text and dark sections (no navy)
+  - `breeze-gold` (#ffe38d) — tropical accents
+  - `breeze-sand` (#dfc0aa) — warm neutrals
+  - `breeze-foam` (#fff5f7) — soft backgrounds
+- **Typography:** Fredoka for headlines (`.font-display`), DM Sans for body
+- **Vibe:** Full tropical — pink, teal, sunset gradients, wave dividers (`.section-wave`), sparkle accents
+- **Instructor:** Brielle Goldberg — Academy of Aquatic Survival Training certified; Level 4 Adaptive Swim Whispers certified; Executive Director of WaterSafe Inc.
+- **Email:** breezeswimlessons@gmail.com
+- **Instagram:** [@breezeswimlessons](https://www.instagram.com/breezeswimlessons/)
+- **Facebook:** [facebook.com/breezeswimlessons](https://www.facebook.com/breezeswimlessons)
+- **Lesson location:** Private pool in Bunnell — a city in Flagler County, FL
+- **Season:** Afternoon lessons, March through October
+- **Waitlist:** New families join via Google form — set URL in `js/site-config.js` (`waitlistUrl`). Primary CTA is **Join the Waitlist**, not "Book a Lesson"
+- **Lesson format:** **15 minutes** per session, **4× per week** (Monday–Thursday)
+- **Program length:** Most students complete a **4–6 week** private program
+- **Media files** (AirDrop from iPhone into project):
+  - `images/logo.png` — main logo
+  - `images/favicon-32.png`, `images/apple-touch-icon.png`, `images/og-image.png`
+  - `images/hero.jpg` — homepage hero
+  - `images/brielle.jpg` — instructor portrait (About + homepage)
+  - `images/pool.jpg` — pool / location
+  - `images/gallery-1.jpg` … `gallery-3.jpg` — homepage gallery
+  - `videos/clip-1.mp4` … `clip-3.mp4` (or `.mov`) — local lesson clips, OR paste YouTube links in `js/site-config.js`
 
 Do not mix XP Detailing assets, copy, or styling into this project.

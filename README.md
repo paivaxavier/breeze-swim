@@ -23,6 +23,31 @@ python3 -m http.server 8080
 
 Then visit http://localhost:8080
 
+## Adding lesson videos
+
+Videos live in the `videos/` folder — you don't add them through Cursor.
+
+1. **AirDrop** clips from iPhone to your Mac (Downloads is fine)
+2. Copy into `~/breeze-swim/videos/` via **Finder** or Terminal:
+
+```bash
+cp ~/Downloads/YourVideo.MOV ~/breeze-swim/videos/clip-1.mov
+```
+
+3. Make sure `js/site-config.js` points to each file:
+
+```javascript
+src: 'videos/clip-1.mov',
+```
+
+Use `.mp4` for web playback (`.mov` from iPhone often won't play in Chrome). Convert with:
+
+```bash
+avconvert --source clip-1.mov --preset Preset1280x720 --output clip-1.mp4 --replace
+```
+
+The homepage video section hides automatically if no files are set.
+
 ## GitHub (separate from XP Detailing)
 
 This repo is independent of `paivaxavier/default`. To publish:
