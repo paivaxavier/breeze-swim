@@ -473,6 +473,22 @@ h1, h2, h3, .font-display {
     color: var(--breeze-pink);
 }
 
+.testimonial-card .review-source {
+    margin-top: 0.35rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.testimonial-card .review-source a {
+    color: var(--breeze-deep);
+    text-decoration: none;
+}
+
+.testimonial-card .review-source a:hover {
+    color: var(--breeze-teal);
+}
+
 .testimonial-scroll {
     display: flex;
     gap: 1rem;

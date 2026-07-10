@@ -2,5 +2,7 @@
 .cursor/mcp.json
 .tmp-photos/
 node_modules/
+portal/dist/
 .env
+portal/.env.local
 *.log

@@ -3,7 +3,7 @@
 When working on **Breeze Swim** branding, marketing, or any customer-facing asset:
 
 - **Business:** Breeze Swim — private swim instruction in Flagler County, FL
-- **Focus:** Aquatic survival skills and stroke fundamentals for ages **6 months and up**, **all abilities**
+- **Focus:** Aquatic survival skills for ages **6 months and up**, **all abilities**
 - **Tone:** Warm, reassuring, professional — speak to parents and caregivers with clarity and confidence
 - **Logo:** `images/logo.png` — use full-color logo in nav and footer (`.nav-logo`, `.footer-logo`)
 - **Colors** (from logo):
@@ -25,6 +25,9 @@ When working on **Breeze Swim** branding, marketing, or any customer-facing asse
 - **Waitlist:** New families join via Google form — set URL in `js/site-config.js` (`waitlistUrl`). Primary CTA is **Join the Waitlist**, not "Book a Lesson"
 - **Lesson format:** **15 minutes** per session, **4× per week** (Monday–Thursday)
 - **Program length:** Most students complete a **4–6 week** private program
+- **Pricing:** **$90/week** ($22.50 per 15-min lesson, Mon–Thu) · **$50 annual registration fee**
+- **Private pool travel:** Lessons at a client's private pool are available for an **additional fee** — contact Brielle for details
+- **Refresher lessons:** Offered for **former students** to maintain survival skills — contact Brielle directly (same rates)
 - **Media files** (AirDrop from iPhone into project):
   - `images/logo.png` — main logo
   - `images/favicon-32.png`, `images/apple-touch-icon.png`, `images/og-image.png`

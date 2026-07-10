@@ -7,6 +7,32 @@ window.BREEZE_SWIM = {
         facebook: 'https://www.facebook.com/breezeswimlessons'
     },
 
+    pricing: {
+        weekly: 90,
+        perLesson: 22.5,
+        registrationAnnual: 50,
+        // Set when confirmed; leave null to show "contact for details"
+        privatePoolFee: null
+    },
+
+    // Parent quotes — from public Facebook posts/recommendations
+    reviews: [
+        {
+            quote: 'Breeze Swim is the best!! Brielle is so patient and kind to your little. My son swims like a fish at 2yo!',
+            author: 'Brianna M.',
+            source: 'Facebook · Palm Coast Moms',
+            sourceUrl: 'https://www.facebook.com/groups/335021256611489/posts/26189266320760295/'
+        },
+        {
+            quote: 'My son started at 14 months and my daughter is starting at 18 months! Brielle is amazing with the young ones — she\u2019s so patient with my toddlers!',
+            author: 'Cathy J.',
+            source: 'Facebook · Palm Coast Moms',
+            sourceUrl: 'https://www.facebook.com/groups/335021256611489/posts/26189266320760295/'
+        }
+    ],
+
+    facebookReviewsUrl: 'https://www.facebook.com/breezeswimlessons/reviews',
+
     // Homepage lesson videos — use .mp4 for best browser support (see README)
     videos: [
         {

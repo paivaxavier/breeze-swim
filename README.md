@@ -1,6 +1,6 @@
 # Breeze Swim
 
-Website for **Breeze Swim** — aquatic survival and stroke fundamentals lessons in Flagler County, FL. Lessons for ages 6 months and up, all abilities welcome.
+Website for **Breeze Swim** — private aquatic survival lessons in Flagler County, FL. Lessons for ages 6 months and up, all abilities welcome.
 
 ## Pages
 
@@ -11,6 +11,19 @@ Website for **Breeze Swim** — aquatic survival and stroke fundamentals lessons
 | About | `about.html` |
 | FAQ | `faq.html` |
 | Contact | `contact.html` |
+
+## Client portal
+
+Parents and Brielle use the **client portal** for onboarding and lesson info.
+
+```bash
+cd portal
+cp .env.example .env.local   # add Supabase keys
+npm install
+npm run dev
+```
+
+See **[PORTAL.md](PORTAL.md)** for full setup (Supabase migrations, admin access, invite flow).
 
 ## Local preview
 

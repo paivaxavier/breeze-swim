@@ -1,0 +1,20 @@
+# Breeze Swim Supabase local config
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/auth/callback"]
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
