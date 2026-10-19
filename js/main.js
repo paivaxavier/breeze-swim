@@ -23,21 +23,37 @@
         });
     });
 
-    // Scroll reveal
+    // Scroll reveal. Photos sit inside .reveal at opacity 0 until .visible is added.
     var revealEls = document.querySelectorAll('.reveal');
+    function showReveal(el) {
+        el.classList.add('visible');
+    }
+    function inView(el) {
+        var rect = el.getBoundingClientRect();
+        return rect.bottom > 0 && rect.top < window.innerHeight * 0.92;
+    }
+    function revealInView() {
+        revealEls.forEach(function (el) {
+            if (!el.classList.contains('visible') && inView(el)) showReveal(el);
+        });
+    }
     if (revealEls.length && 'IntersectionObserver' in window) {
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    showReveal(entry.target);
                     observer.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         revealEls.forEach(function (el) { observer.observe(el); });
-    } else {
-        revealEls.forEach(function (el) { el.classList.add('visible'); });
+    } else if (revealEls.length) {
+        revealEls.forEach(showReveal);
     }
+    // IntersectionObserver can miss elements when html/body use overflow-x: clip.
+    revealInView();
+    window.addEventListener('scroll', revealInView, { passive: true });
+    window.addEventListener('resize', revealInView);
 
     // Sticky mobile CTA bar
     var mobileCta = document.getElementById('mobile-cta-bar');
