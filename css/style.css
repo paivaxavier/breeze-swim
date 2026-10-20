@@ -707,7 +707,8 @@ h1, h2, h3, .font-display {
 @media (min-width: 768px) {
     .programs-scroll {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        justify-content: center;
         overflow: visible;
         margin: 0;
         padding: 0;
@@ -715,12 +716,7 @@ h1, h2, h3, .font-display {
 
     .programs-scroll > .program-card {
         flex: unset;
-    }
-}
-
-@media (min-width: 1024px) {
-    .programs-scroll {
-        grid-template-columns: repeat(4, 1fr);
+        width: auto;
     }
 }
 
